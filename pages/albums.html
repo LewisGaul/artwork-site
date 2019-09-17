@@ -1,0 +1,26 @@
+---
+permalink: /albums
+layout: default
+title: Albums
+---
+
+<h1>List of artwork albums</h1>
+
+
+<h3>Albums:</h3>
+
+<ul>
+    {% for album in site.data.albums %}
+    <li><a href="/{{ album.title | datapage_url: 'albums' }}">{{ album.title }}</a></li>
+    {% endfor %}
+</ul>
+
+
+<h3>Standalone images:</h3>
+
+<ul>
+    {% for artwork in site.data.artwork %}
+    <li><a href="/{{ artwork.title | datapage_url: 'artwork' }}">{{ artwork.title }}</a></li>
+    {% endfor %}
+</ul>
+
