@@ -1,7 +1,0 @@
-- title: Album 1
-  description: "Some album description"
-  artwork:
-    - title: artwork 5
-      img_file: img5.jpeg
-    - title: artwork 6
-      img_file: img6.jpeg
