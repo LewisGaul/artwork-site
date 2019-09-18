@@ -1,5 +1,4 @@
 ---
-permalink: /albums
 layout: default
 title: Albums
 ---
@@ -11,7 +10,7 @@ title: Albums
 
 <ul>
     {% for album in site.data.albums %}
-    <li><a href="/{{ album.title | datapage_url: 'albums' }}">{{ album.title }}</a></li>
+    <li><a href="{{ album.title | datapage_url: 'albums' | relative_url }}">{{ album.title }}</a></li>
     {% endfor %}
 </ul>
 
@@ -20,7 +19,7 @@ title: Albums
 
 <ul>
     {% for artwork in site.data.artwork %}
-    <li><a href="/{{ artwork.title | datapage_url: 'artwork' }}">{{ artwork.title }}</a></li>
+    <li><a href="{{ artwork.title | datapage_url: 'artwork' | relative_url }}">{{ artwork.title }}</a></li>
     {% endfor %}
 </ul>
 

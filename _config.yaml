@@ -4,12 +4,20 @@ data_dir            : _data/
 includes_dir        : _includes/
 sass_dir            : _sass/
 
+#baseurl: /artwork-site
+
+collections:
+  pages:
+    output: true
+    permalink: /:path
+
 page_gen-dirs: true
 page_gen:
-  - data: artwork      # The name of the data file
-    template: artwork  # The layout to use
-    name: title        # The field to use as the page name
-    dir: artwork       # The dir to store in pages in
+  - data: artwork       # The name of the data file
+    template: artwork   # The layout to use
+    name: title         # The field to use as the page name
+    dir: artwork        # The dir to store in pages in
+    index_files: false  # Don't create a directory with an index.html
   - data: albums
     template: album
     name: title
