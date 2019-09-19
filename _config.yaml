@@ -4,6 +4,8 @@ data_dir            : _data/
 includes_dir        : _includes/
 sass_dir            : _sass/
 
+exclude: [.idea/, TEG/]
+
 #baseurl: /artwork-site
 
 collections:
