@@ -6,7 +6,7 @@ sass_dir            : _sass/
 
 exclude: [.idea/, TEG/]
 
-#baseurl: /artwork-site
+baseurl: /artwork-site
 
 collections:
   pages:
