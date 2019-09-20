@@ -14,6 +14,5 @@ ECHO Enter 'localhost:4000' in the search bar of a web browser to preview the we
 ECHO Opening in your default browser now...
 explorer "http://localhost:4000"
 ECHO(
-ECHO When you're finished, just close this window. Don't forget to run 'release' (after
-ECHO closing this window)!
+ECHO When you're finished, just close this window. Don't forget to run 'release'!
 ::PAUSE
