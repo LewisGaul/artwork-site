@@ -1,27 +1,48 @@
 @ECHO off
 CD ..
+
+ECHO ===============
+ECHO Updating...
+ECHO ===============
+:: Clean the _static dir as it is about to be updated anyway.
+git checkout _static
+git clean _static -fd
+:: Ensure we pick up any new assets (for the stash).
+git add assets\
+:: Encourage pull to succeed.
+git pull --rebase --autostash
+
+ECHO(
+ECHO(
+
 ECHO ===============
 ECHO Building...
 ECHO ===============
 CMD /C bundler exec jekyll build
+
 ECHO(
 ECHO(
+
 ECHO ===============
 ECHO Releasing...
 ECHO ===============
-git pull
-git add assets\images\
-git add -u
-git commit -m "Update artwork"
+:: Main branch update.
+git add _static\
+git commit -am "Update artwork"
 git push
+
+:: gh-pages release update. Uses a copy of the git repo on the gh-pages branch.
+RMDIR _gh-pages\artwork\ _gh-pages\albums\ _gh-pages\assets\ /S /Q
 ROBOCOPY _static\ _gh-pages\ /S
 CD _gh-pages\
-git pull
 git add artwork\ albums\ assets\
 git add -u
-git commit -m "Update artwork"
+git pull --rebase --autostash
+git commit -am "Update artwork"
 git push
+
 ECHO(
 ECHO(
 ECHO Done! Go to 'lewisgaul.github.io/artwork-site' to see the live site.
+
 PAUSE
