@@ -1,5 +1,33 @@
 Simple easy instructions :)
 
-To add an image:
- - Run the program called 'open-image-folder'
- - Put images there
+To add artwork images:
+ - Run the program called 'open-image-folder'.
+ - Put images there.
+
+To add a standalone artwork page:
+ - Run the program called 'edit-artworks'.
+ - Copy the existing format to add a new artwork with a title, description and
+   name of the image file you added in the images folder (must include the
+   image type, e.g. 'image.png', 'image.jpg', 'image.jpeg'...).
+
+To add a new album or edit an existing album:
+ - Run the program called 'edit-albums'.
+ - Copy the existing format to set the album title and description.
+ - Copy the existing format to add new artworks to the album (as above).
+
+To preview your changes:
+ - Run the program called 'preview' (leave the command window open while you
+   view the page).
+ - If the browser page that opens says "Unable to load", just refresh the page
+   and it should work.
+ - If you make further changes you should see them automatically when you
+   refresh the page, as long as the 'preview' program window is still open.
+
+To release your changes:
+ - Run the program called 'release'.
+ - When it says "Done!" you can close the window.
+ - See your changes at http://lewisgaul.github.io/artwork-site.
+
+If something doesn't seem right:
+ - Run the program called 'debug', and send me the log file that is created
+   called 'debug-log'.
