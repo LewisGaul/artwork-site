@@ -1,0 +1,5 @@
+Simple easy instructions :)
+
+To add an image:
+ - Run the program called 'open-image-folder'
+ - Put images there
