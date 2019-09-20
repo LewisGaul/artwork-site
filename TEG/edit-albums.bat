@@ -1,0 +1,1 @@
+START notepad ..\_data\albums.yaml

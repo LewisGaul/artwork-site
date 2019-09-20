@@ -1,16 +1,27 @@
-ECHO on
+@ECHO off
 CD ..
+ECHO ===============
 ECHO Building...
-bundler exec jekyll build --baseurl artwork-site
+ECHO ===============
+CMD /C bundler exec jekyll build
+ECHO(
+ECHO(
+ECHO ===============
 ECHO Releasing...
+ECHO ===============
+git pull
 git add assets\images\
-echo git commit -am "Update artwork"
+git add -u
+git commit -m "Update artwork"
 git push
-ROBOCOPY _static\ gh-pages\ /S
+ROBOCOPY _static\ _gh-pages\ /S
 CD _gh-pages\
+git pull
 git add artwork\ albums\ assets\
-echo git commit -am "Update artwork"
+git add -u
+git commit -m "Update artwork"
 git push
+ECHO(
 ECHO(
 ECHO Done! Go to 'lewisgaul.github.io/artwork-site' to see the live site.
 PAUSE

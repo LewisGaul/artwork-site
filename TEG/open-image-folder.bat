@@ -1,0 +1,1 @@
+START %windir%\explorer.exe "..\assets\images\artwork\"
