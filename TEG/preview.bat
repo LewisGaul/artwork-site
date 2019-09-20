@@ -15,7 +15,7 @@ ECHO(
 ECHO Hello Tamsin!
 ECHO Enter 'localhost:4000' in the search bar of a web browser to preview the website.
 ECHO Opening in your default browser now...
-start chrome "http://localhost:4000"
+explorer "http://localhost:4000"
 ECHO(
 ECHO When you're finished, just close this window. Don't forget to run 'release' (after
 ECHO closing this window)!
