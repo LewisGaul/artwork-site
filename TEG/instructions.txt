@@ -26,7 +26,8 @@ To preview your changes:
 To release your changes:
  - Run the program called 'release'.
  - When it says "Done!" you can close the window.
- - See your changes at http://lewisgaul.github.io/artwork-site.
+ - See your changes at http://lewisgaul.github.io/artwork-site (may take a
+   minute to update).
 
 If something doesn't seem right:
  - Run the program called 'debug', and send me the log file that is created
