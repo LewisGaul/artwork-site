@@ -14,9 +14,8 @@
   description: "Some medium description"
   img_file: img4
 - title: Image 5
-  description: "Some medium description"
+  description: "Description 
+over 
+multiple 
+lines"
   img_file: img5.jpeg
-
-- title: Image 6
-  description: "Some medium description"
-  img_file: img6.jpeg
