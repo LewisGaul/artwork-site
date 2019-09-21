@@ -28,17 +28,16 @@ git commit -am "Update artwork"
 git push
 
 :: gh-pages release update. Uses a copy of the git repo on the gh-pages branch.
-RMDIR _gh-pages\artwork\ _gh-pages\albums\ _gh-pages\assets\ /S /Q
-ROBOCOPY _static\ _gh-pages\ /S
 CD _gh-pages\
+git pull
+RMDIR artwork\ albums\ assets\ /S /Q
+ROBOCOPY ..\_static\ . /S
 git add artwork\ albums\ assets\
-git add -u
-git pull --rebase --autostash
 git commit -am "Update artwork"
 git push
 
 ECHO(
 ECHO(
 ECHO Done! Go to 'lewisgaul.github.io/artwork-site' to see the live site.
-
+ECHO(
 PAUSE
