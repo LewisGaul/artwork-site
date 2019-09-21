@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n",
+		"\n/*\n * Global\n */\nbody {\n  font-family: \"Segoe UI\", Candara, \"Bitstream Vera Sans\", \"DejaVu Sans\", \"Bitstream Vera Sans\", \"Trebuchet MS\", Verdana, \"Verdana Ref\", sans-serif;\n  background-color: #8AF;\n  margin: 0;\n}\n\n/*\n * Navigation bar\n */\nnav {\n  display: block;\n  background-color: #ACF;\n  top: 0px;\n  left: 0px;\n  right: 0px;\n  padding: 10px;\n  \n  .nav-button {\n    font-weight: bold;\n    background-color: #DDF;\n    display: inline-block;\n    padding: 10px;\n    cursor: pointer;\n    text-align: center;\n    line-height: 30px;\n    border: 1px solid #BBB;\n    border-radius: 10px;\n    text-decoration: none;\n  }\n\n  .nav-button-current {\n    color: red;\n  }\n}\n\n.content {\n  margin: 8px;\n}\n\n/*\n * Artwork images\n */\nimg.artwork {\n  width: auto;\n  height: auto;\n  max-width: 500px;\n  max-height: 300px;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACCA,YAEG;AACH,AAAA,IAAI,CAAC,EACH,WAAW,EAAE,oIAAoI,EACjJ,gBAAgB,EAAE,IAAI,EACtB,MAAM,EAAE,CAAC,GACV;;AAED,oBAEG;AACH,AAAA,GAAG,CAAC,EACF,OAAO,EAAE,KAAK,EACd,gBAAgB,EAAE,IAAI,EACtB,GAAG,EAAE,GAAG,EACR,IAAI,EAAE,GAAG,EACT,KAAK,EAAE,GAAG,EACV,OAAO,EAAE,IAAI,GAkBd;;AAxBD,AAQE,GARC,CAQD,WAAW,CAAC,EACV,WAAW,EAAE,IAAI,EACjB,gBAAgB,EAAE,IAAI,EACtB,OAAO,EAAE,YAAY,EACrB,OAAO,EAAE,IAAI,EACb,MAAM,EAAE,OAAO,EACf,UAAU,EAAE,MAAM,EAClB,WAAW,EAAE,IAAI,EACjB,MAAM,EAAE,cAAc,EACtB,aAAa,EAAE,IAAI,EACnB,eAAe,EAAE,IAAI,GACtB;;AAnBH,AAqBE,GArBC,CAqBD,mBAAmB,CAAC,EAClB,KAAK,EAAE,GAAG,GACX;;AAGH,AAAA,QAAQ,CAAC,EACP,MAAM,EAAE,GAAG,GACZ;;AAED,oBAEG;AACH,AAAA,GAAG,AAAA,QAAQ,CAAC,EACV,KAAK,EAAE,IAAI,EACX,MAAM,EAAE,IAAI,EACZ,SAAS,EAAE,KAAK,EAChB,UAAU,EAAE,KAAK,GAClB"
+}

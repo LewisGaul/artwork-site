@@ -1,0 +1,16 @@
+/* Global */
+body { font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif; background-color: #8AF; margin: 0; }
+
+/* Navigation bar */
+nav { display: block; background-color: #ACF; top: 0px; left: 0px; right: 0px; padding: 10px; }
+
+nav .nav-button { font-weight: bold; background-color: #DDF; display: inline-block; padding: 10px; cursor: pointer; text-align: center; line-height: 30px; border: 1px solid #BBB; border-radius: 10px; text-decoration: none; }
+
+nav .nav-button-current { color: red; }
+
+.content { margin: 8px; }
+
+/* Artwork images */
+img.artwork { width: auto; height: auto; max-width: 500px; max-height: 300px; }
+
+/*# sourceMappingURL=styles.css.map */
