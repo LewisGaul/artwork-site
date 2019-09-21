@@ -9,13 +9,15 @@ To add a standalone artwork page:
  - Copy the existing format to add a new artwork with a title, description and
    name of the image file you added in the images folder (must include the
    image type, e.g. 'image.png', 'image.jpg', 'image.jpeg'...).
+ - Save the file.
 
 To add a new album or edit an existing album:
  - Run the program called 'edit-albums'.
  - Copy the existing format to set the album title and description.
  - Copy the existing format to add new artworks to the album (as above).
+ - Save the file.
 
-To preview your changes:
+To preview your changes and pick up other changes:
  - Run the program called 'preview' (leave the command window open while you
    view the page).
  - If the browser page that opens says "Unable to load", just refresh the page
