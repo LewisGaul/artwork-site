@@ -4,9 +4,6 @@ CD ..
 ECHO ===============
 ECHO Updating...
 ECHO ===============
-:: Clean the _static dir as it is about to be updated anyway.
-git checkout _static
-git clean _static -fd
 :: Ensure we pick up any new assets (for the stash).
 git add assets\
 :: Encourage pull to succeed.
@@ -27,7 +24,6 @@ ECHO ===============
 ECHO Releasing...
 ECHO ===============
 :: Main branch update.
-git add _static\
 git commit -am "Update artwork"
 git push
 
