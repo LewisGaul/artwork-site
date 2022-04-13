@@ -7,5 +7,5 @@ layout: default
 <p>{{ page.description }}</p>
 
 {% for artwork in page.artwork %}
-<img class="artwork" src="{{ "/assets/images/artwork/" | relative_url }}{{ artwork.img_file }}">
+<img class="artwork" src="{{ "/assets/images/artwork/" | relative_url }}{{ artwork.img_file }}" />
 {% endfor %}

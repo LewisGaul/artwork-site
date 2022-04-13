@@ -1,18 +1,22 @@
 - title: Img 1
   description: Some description
   img_file: img1.jpeg
+
 - title: Img 2
   description: "
   Some very long description
   over multiple lines
   "
   img_file: img2.jpeg
+
 - title: Image 3
   description: "Some medium description"
   img_file: img3.jpeg
+
 - title: Image 4
   description: "Some medium description"
-  img_file: img4
+  img_file: img4.jpeg
+
 - title: Image 5
   description: "Some medium description"
   img_file: img5.jpeg
@@ -20,3 +24,11 @@
 - title: Image 6
   description: "Some medium description"
   img_file: img6.jpeg
+
+- title: Image 7
+  description: "Some medium description"
+  img_file: img7.jpeg
+
+- title: Image 8
+  description: "Some medium description"
+  img_file: img8.jpeg

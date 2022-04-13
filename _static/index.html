@@ -1,12 +1,34 @@
----
-permalink: /
-layout: default
-title: Home
----
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/artwork-site/assets/css/styles.css">
+  </head>
+  <body>
+    <nav>
+  
+    <a href="/artwork-site/"
+	   class="nav-button nav-button-current">
+      Home
+    </a>
+  
+    <a href="/artwork-site/albums"
+	   class="nav-button ">
+      Albums
+    </a>
+  
+    <a href="/artwork-site/contact"
+	   class="nav-button ">
+      Contact
+    </a>
+  
+</nav>
 
-<link type="text/css" rel="stylesheet" href="{{ "assets/css/lightslider.css" | relative_url }}" />
+	<div class="content">
+	  <link type="text/css" rel="stylesheet" href="/artwork-site/assets/css/lightslider.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="{{ "assets/js/lightslider.js" | relative_url }}"></script>
+<script src="/artwork-site/assets/js/lightslider.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
     $("#lightslider").lightSlider({
@@ -69,10 +91,42 @@ $(document).ready(function() {
 <h1>Tamsin's Art Portfolio</h1>
 
 <ul id="lightslider">
-    {% for artwork in site.data.artwork %}
+    
     <li>
-        <img class="artwork" src="{{ "/assets/images/artwork/" | relative_url }}{{ artwork.img_file }}" />
+        <img class="artwork" src="/artwork-site/assets/images/artwork/img1.jpeg" />
     </li>
-    {% endfor %}
+    
+    <li>
+        <img class="artwork" src="/artwork-site/assets/images/artwork/img2.jpeg" />
+    </li>
+    
+    <li>
+        <img class="artwork" src="/artwork-site/assets/images/artwork/img3.jpeg" />
+    </li>
+    
+    <li>
+        <img class="artwork" src="/artwork-site/assets/images/artwork/img4.jpeg" />
+    </li>
+    
+    <li>
+        <img class="artwork" src="/artwork-site/assets/images/artwork/img5.jpeg" />
+    </li>
+    
+    <li>
+        <img class="artwork" src="/artwork-site/assets/images/artwork/img6.jpeg" />
+    </li>
+    
+    <li>
+        <img class="artwork" src="/artwork-site/assets/images/artwork/img7.jpeg" />
+    </li>
+    
+    <li>
+        <img class="artwork" src="/artwork-site/assets/images/artwork/img8.jpeg" />
+    </li>
+    
 </ul>
 
+
+	</div>
+  </body>
+</html>
